@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(245, 240, 240);
+
+  padding: 20px;
+}
+
+.nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  color: black;
+  margin-right: 25px;
+  justify-content: flex-end;
+}
+.nav h5 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+.nav i {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#first {
+  margin: 45px;
+  margin-left: 11%;
+  line-height: 70px;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+#first h1 {
+  font-weight: 400;
+  font-size: 68px;
+}
+
+#elem {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.elem1 {
+  width: 500px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+  color: gray;
+}
+.point {
+  padding-bottom: 30px;
+}
+.point h4 {
+  display: flex;
+  font-size: 28px;
+
+  color: rgba(21, 21, 21, 0.895);
+}
+.point i {
+  margin-left: 15px;
+  font-weight: 300;
+}
+.image {
+  width: 100%;
+  height: 200px;
+}
+.imgage {
+  width: 100%;
+  
+  background-color: red;
+}
